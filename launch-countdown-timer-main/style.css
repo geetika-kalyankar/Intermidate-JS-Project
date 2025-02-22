@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');:root{
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", serif;;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/bg-stars.svg');
+    background-color: var(--very-dark-mostly-black-blue);
+    color: #ffffff;
+}
+/* --------------- Header Section ------------------ */
+h1{
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 8rem;
+
+}
+/* --------------- Count down section -------------- */
+.time-set{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.time-val{
+    background-color: #16161f;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top{
+    background-color: #2C2C44;
+    width: 100%;
+    height: 45%;
+    border-radius: 10px;
+}
+.bottom{
+    background-color: #34364F;
+    width: 100%;
+    height: 45%;
+    border-radius: 10px;
+}
+.value{
+    position: absolute;
+    font-size: 55px;
+    color: var(--soft-red);
+    font-weight: 700;
+    padding-top: 0.5rem;
+    
+}
+.text{
+    color: var(--Grayish-blue);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.social{
+    width: 100%;
+    position: absolute;
+    bottom: 5rem;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.social-icon {
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    filter: invert(40%) sepia(90%) saturate(1000%) hue-rotate(315deg) brightness(105%) contrast(95%);
+}
+
+
+
+
+/* -------------------- Bottom mountain image ------------------- */
+.mountain{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+}
+.btm{
+    height: 12rem;
+    width: 100%;
+}
+/* --------------------- Footer Section ----------------------- */
+
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* -----------Phone Screen ------------- */
+@media (max-width:480px) {
+    .time-set{
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+}
