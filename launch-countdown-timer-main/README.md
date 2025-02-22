@@ -4,7 +4,7 @@
 ### Links
 
 - Solution URL: [Github](https://github.com/geetika-kalyankar/Intermidate-JS-Project/tree/main/launch-countdown-timer-main)
-- Live Site URL: [Netlify Link](https://superlative-dragon-a9e6fb.netlify.app/)
+- Live Site URL: [Netlify Link](https://countdown-timer-geetika.netlify.app/)
 
 ### ScreenShot
 
